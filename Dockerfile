@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install "mcp[cli]" --break-system-packages
+RUN pip3 install "mcp[cli]"
 
 COPY ocr_mcp_server.py /app/ocr_mcp_server.py
 
