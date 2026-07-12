@@ -15,3 +15,4 @@ RUN pip3 install "mcp[cli]"
 COPY ocr_mcp_server.py /app/ocr_mcp_server.py
 
 ENTRYPOINT ["python3", "/app/ocr_mcp_server.py"]
+# trigger rebuild
